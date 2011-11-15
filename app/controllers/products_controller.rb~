@@ -12,7 +12,7 @@ class ProductsController < ApplicationController
    end
 
    def create
-      @product = Product.new(params[:product])
+      @product = Product.new(params[:post])
       if @product.save
          redirect_to products_path
       else

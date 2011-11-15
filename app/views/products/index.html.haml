@@ -1,14 +1,12 @@
 %table
-   %tr
-      %td Name
-      %td Description
-   -@products.each do |p|
-      %tr
-         %td= p.name
-         %td= p.description
+  %tr
+    %td Name
+    %td Description
+  -@products.each do |p|
+    %tr
+      %td= p.name
+      %td= p.description
 
-%h1 Dodaj produkt:
-= form_for @product do |f|
-   %p= f.text_field :name
-   %p= f.text_area :description
-   %p= f.submit "Dodaj"
+
+%p
+  %b= link_to "Dodaj produkt", products_path + "/new"

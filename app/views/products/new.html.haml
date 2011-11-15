@@ -1,0 +1,10 @@
+%h1 Dodaj post:
+= form_for @product do |p|
+   %p
+      = p.label :name, "Tytuł"
+      %br= p.text_field :name
+   %p
+      = p.label :description, "Treść"
+      %br= p.text_area :description
+
+      %br= p.submit "Dodaj"
