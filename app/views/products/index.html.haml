@@ -7,6 +7,7 @@
       %td= p.name
       %td= p.description
 
-
+%b= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook)
+%b= link_to "Sign out Facebook", cancel_user_registration_path
 %p
   %b= link_to "Dodaj produkt", products_path + "/new"

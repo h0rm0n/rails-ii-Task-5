@@ -6,9 +6,12 @@ gem 'rails', '3.1.1'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'haml'
-gem 'devise'
 gem 'pg'
-gem 'faker'
+
+gem 'devise', :git => 'git://github.com/plataformatec/devise.git'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem "oa-oauth", :require => "omniauth/oauth"
 
 # Gems used only for assets and not required
 # in production environments by default.
